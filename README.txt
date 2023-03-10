@@ -1,3 +1,5 @@
+# WEB CALCULATOR
+
 This is a simple Web Calculator, it is not an advanced Calculator, 
  so we precise that only the elementary operations can be done,
  it has an option to round decimals on floating point results,
