@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple Calculator">
+    <meta name="keywords" content="Calculator, Numbers, Rounding">
+    <meta name="author" content="Yassir Dahraoui">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="round card">
+        <label>Decimals to round: <span id="dec">5</span></label>
+        <input id="rng" class="input is-size-7 is-white" value=5 onclick="roundresult()" type="range" min="1" max="11">
+    </div>
+    <div class="container card">
+        <div class="output card-header">
+            <button class="button ac is-size-3 is-warning" onclick="display(0)">AC</button>
+            <input type="number" id="output" value="0" class="input is-size-2 is-white">
+        </div>
+        <div class="buttons card-footer columns">
+            <div id="nums" class="numbers column is-9 is-12-mobile" dir="rtl">
+            </div>
+            <div class="operators column is-3">
+                <button class="button is-size-3 is-white" onclick="operate('/')">/</button>
+                <button class="button is-size-3 is-white" onclick="operate('x')">x</button>
+                <button class="button is-size-3 is-white" onclick="operate('-')">-</button>
+                <button class="button is-size-3 is-white" onclick="operate('+')">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="elaboration.js"></script>
+</body>
+</html>
