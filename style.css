@@ -90,30 +90,24 @@ input[type=number] {
         width: 55%;
     }
 }
-@media screen and (max-width: 768px){
-    .container{
-        height: 625px;
-    }
-    .operators{
-        text-align: center;
-    }
-    .operators button{
-        font-size: 10px;
-        display: inline-block;
-        width: 20%;
-    }
-}
-@media screen and (max-width: 662px){
+@media screen and (max-width: 580px){
     .round{
         width: 65%;
     }
     .container{
-        width: 95%;
+        width: 97%;
     }
-    .numbers button{
-        width: 29%;
+}
+@media screen and (max-width: 400px){
+    .container{
+        padding: 5px;
     }
-    .operators{
-        font-size: 7px;
+}
+@media screen and (max-width: 370px){
+    .container{
+        padding: 0;
+    }
+    #nums .button{
+        margin-right: 2px;
     }
 }
